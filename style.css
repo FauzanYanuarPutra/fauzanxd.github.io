@@ -1,0 +1,319 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* VARIABLES CSS */
+:root {
+   --header-height: 3rem;
+
+   /* colors */
+   --hue: 174;
+   --sat: 63%;
+
+   /* --first-color: hsl(var(--hue), var(--sat), 40%); */
+   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+   /* --title-color: hsl(var(--hue), 12%, 15%); */
+   --text-color: hsl(var(--hue), 8%, 35%);
+   --body-color: hsl(var(--hue), 100%, 99%);
+   --container-color: #191a1e;
+   --text-color: #fff;
+
+   /* ACTIVE */
+   --active-color: #33FFD7;
+
+   /* NAV */
+   --nav-background: #6c6c72;
+   --nav-icon: #fff;
+   --first-color: #fff;
+   --title-color: #fff;
+
+   /* Font and Typography */
+   --body-font: 'Open Sans', sans-serif;
+
+   --h1-font-size: 1.5rem;
+   --normal-font-size: .938rem;
+   --tiny-font-size: .625rem;
+
+   /* Z index */
+   --z-tooltip: 10;
+   --z-fixed: 100;
+
+   /* CONTENT */
+   --hijau-muda: #33FFD7;
+}
+
+/* Responsive Typography */
+@media screen and (min-width: 968px) {
+   :root {
+      --h1-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+   }
+}
+
+/* BASE */
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: var(--header-height) 0 0 0;
+   font-family: var(--body-font);
+   font-size: var(--normal-font-size);
+   background-color: var(--container-color);
+   color: var(--text-color);
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto
+}
+
+
+/* REUSABLE CSS CLASSES */
+.section {
+   padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+   font-size: var(--h1-font-size);
+   color: var(--tittle-color);
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.section__height {
+   height: 100vh;
+}
+
+/* LAYOUT */
+.container {
+   max-width: 968px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+
+/* HEADER */
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--container-color);
+   z-index: var(--z-fixed);
+   transition: .4s;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.152);
+}
+
+
+/* NAV */
+.nav {
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.nav__img {
+   width: 32px;
+   border-radius: 50%
+}
+
+.nav__logo {
+   color: var(--tittle-color);
+   font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+   .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--nav-background);
+      /* box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15); */
+      /* box-shadow: 0 -1px 12px rgba(208, 208, 208, 0.666); */
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      border-radius: 1.25rem 1.25rem 0 0;
+      transition: .4s;
+
+   }
+
+   .logo__bawah {
+      display: block;
+   }
+
+
+}
+
+.nav__list,
+.nav__link {
+   display: flex;
+}
+
+.nav__link {
+   flex-direction: column;
+   align-items: center;
+   row-gap: .25rem;
+   color: var(--title-color);
+   font-weight: 600;
+}
+
+.nav__list {
+   justify-content: space-around;
+}
+
+.nav__name {
+   font-size: var(--tiny-font-size);
+   display: none;
+   /* Mininalist design, hidden labels */
+}
+
+.nav__icon {
+   font-size: 1.5rem;
+}
+
+/*=== Active Link ===*/
+.active-link {
+   position: relative;
+   color: var(--active-color);
+
+   transform: scale(1.3);
+   transition: .3s;
+}
+
+/* Minimalist design, active link */
+.active-link::before {
+   content: '';
+   position: absolute;
+   bottom: -.5rem;
+   width: 50%;
+   height: 4px;
+   background-color: var(--active-color);
+   transform: scale(0.3);
+   /* border-radius: 50%; */
+   transition: .3s;
+}
+
+
+/* Change background header */
+.scroll-header {
+   box-shadow: 0 1px 12px hsla(var(--title-color), var(--title-color), 15%, 0.15);
+}
+
+/*===== MEDIA QUERIES =====*/
+/* For small device */
+/* remove if you choose, the minimalist design */
+
+/* @media screen and (max-width: 320px) {
+   .nav__name {
+      display: none;
+   }
+} */
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+   .nav__list {
+      justify-content: center;
+      column-gap: 3rem;
+   }
+
+   h1.home__title.section__title {
+      color: var(--hijau-muda);
+      font-size: 2000%
+   }
+
+   /* ABOUT */
+   h1.about-title {
+      font-size: 80px;
+   }
+
+
+}
+
+
+
+@media screen and (min-width: 767px) {
+   body {
+      margin: 0;
+   }
+
+   .section {
+      padding: 7rem 0 2rem;
+   }
+
+   .nav {
+      height: calc(var(--header-height) + 1.5rem);
+      /* 4.5rem */
+      justify-content: space-around;
+   }
+
+   .nav__img {
+      display: none;
+   }
+
+   .nav__icon {
+      display: none;
+   }
+
+   .nav__name {
+      font-size: var(--normal-font-size);
+      display: block;
+   }
+
+   .nav__link:hover {
+      color: var(--first-color);
+   }
+
+   /* .active-link::before {
+      content: '';
+      position: absolute;
+      bottom: -.75rem;
+      width: 4px;
+      height: 4px;
+      background-color: var(--first-color);
+      border-radius: 50%
+   } */
+
+   .active-link::before {
+      bottom: -.75rem;
+   }
+
+
+}
+
+
+/* For Large devices */
+@media screen and (min-width: 1024px) {
+   .container {
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .logo_bawah {
+      display: none;
+   }
+
+
+}
