@@ -157,11 +157,14 @@ img {
       align-content: center;
       border-radius: 1.25rem 1.25rem 0 0;
       transition: .4s;
+
    }
 
    .logo__bawah {
       display: block;
    }
+
+
 }
 
 .nav__list,
@@ -235,6 +238,8 @@ img {
       justify-content: center;
       column-gap: 3rem;
    }
+
+
 }
 
 @media screen and (min-width: 767px) {
@@ -282,6 +287,8 @@ img {
    .active-link::before {
       bottom: -.75rem;
    }
+
+
 }
 
 
@@ -295,20 +302,6 @@ img {
    .logo_bawah {
       display: none;
    }
-}
 
-
-/*==================== CONTENT ====================*/
-.hero h1,
-.hero h3 {
-   display: flex;
-   justify-content: center;
-}
-
-.nama-awal {
-   display: relative;
-   font-size: 33px;
-   color: var(--hijau-muda);
-   margin-top: 0px;
 
 }

@@ -1,0 +1,106 @@
+/* .container {
+   max-width: 768px;
+   margin-left: var(--mb-1-5);
+   margin-right: var(--mb-1-5);
+}
+
+.grid {
+   display: grid;
+   gap: 1.5rem;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* VARIABLES CSS */
+:root {
+   --header-height: 3rem;
+
+   /* colors */
+   --hue: 174;
+   --sat: 63%;
+
+   /* --first-color: hsl(var(--hue), var(--sat), 40%); */
+   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+   /* --title-color: hsl(var(--hue), 12%, 15%); */
+   --text-color: hsl(var(--hue), 8%, 35%);
+   --body-color: hsl(var(--hue), 100%, 99%);
+   --container-color: #191a1e;
+   --text-color: #fff;
+
+   /* ACTIVE */
+   --active-color: #33FFD7;
+
+   /* NAV */
+   --nav-background: #6c6c72;
+   --nav-icon: #fff;
+   --first-color: #fff;
+   --title-color: #fff;
+
+   /* Font and Typography */
+   --body-font: 'Open Sans', sans-serif;
+
+   --h1-font-size: 1.5rem;
+   --normal-font-size: .938rem;
+   --tiny-font-size: .625rem;
+
+   /* Z index */
+   --z-tooltip: 10;
+   --z-fixed: 100;
+
+   /* CONTENT */
+   --hijau-muda: #33FFD7;
+}
+
+/* Section */
+/* .section {
+   padding: 2rem 0 4rem;
+}
+
+.section__title {
+   font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+   display: block;
+   font-size: var(--normal-font-size);
+   margin-bottom: 2px;
+}
+
+.section__title,
+.section__subtitle {
+   text-align: center;
+} */
+
+
+/* HOME */
+.home__container {
+   gap: 1rem;
+}
+
+
+
+div.home__social {
+   display: grid;
+   grid-template-columns: max-content;
+   row-gap: 1rem;
+   margin-top: -110px;
+   padding-bottom: 20px;
+   width: 200px
+}
+
+.home__social-icon {
+   font-size: 25px;
+   color: var(--first-color);
+}
+
+h1.home__title.section__title {
+   color: var(--hijau-muda);
+   font-size: 280%
+}
+
+h3.home_subtitle.section__title {
+   text-align: center;
+   margin-top: -25px;
+   font-size: 110
+   +%
+}
