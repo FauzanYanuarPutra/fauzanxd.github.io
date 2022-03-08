@@ -31,7 +31,7 @@
    --active-color: #33FFD7;
 
    /* NAV */
-   --nav-background: #6c6c72;
+   --nav-background: #464646;
    --nav-icon: #fff;
    --first-color: #fff;
    --title-color: #fff;
@@ -49,6 +49,10 @@
 
    /* CONTENT */
    --hijau-muda: #33FFD7;
+
+   /* ABOUT */
+   --isi-text: #D1D5DB;
+
 }
 
 /* Section */
@@ -72,11 +76,21 @@
 } */
 
 
+.nav__item:hover {
+   transform: scale(1.2);
+}
+
+/* HOME */
+
+/* .container-hero {
+   display: flex;
+   flex-wrap: wrap;
+} */
+
 /* HOME */
 .home__container {
    gap: 1rem;
 }
-
 
 
 div.home__social {
@@ -95,12 +109,194 @@ div.home__social {
 
 h1.home__title.section__title {
    color: var(--hijau-muda);
-   font-size: 280%
+   font-size: 50px
 }
 
 h3.home_subtitle.section__title {
    text-align: center;
    margin-top: -25px;
-   font-size: 110
-   +%
+   font-size: 25px
+}
+
+/* BUTTONS */
+.about__button {
+   display: flex;
+   justify-content: center;
+}
+
+.button {
+   display: inline-block;
+   background-color: var(--hijau-muda);
+   color: black;
+   padding: 10px;
+   border-radius: 15px;
+   transition: .3s;
+}
+
+.button:hover {
+   transform: scale(1.2);
+}
+
+/* ABOUT */
+h1.about-title {
+   font-size: 45px;
+}
+
+h1.skillset-title {
+   font-size: 28px;
+}
+
+h1.skillset {
+   font-size: 22px;
+}
+
+.about-title2 {
+   font-size: 19px;
+   margin-top: 10px;
+}
+
+.about-description {
+   line-height: 2;
+   font-size: 17px;
+   color: var(--isi-text);
+}
+
+/* AKHIR ABOUT */
+
+.link_warna {
+   color: var(--hijau-muda);
+   text-decoration: underline;
+}
+
+.garis {
+   width: 100%;
+   height: 1px;
+   background-color: rgba(255, 255, 255, 0.219)
+}
+
+.jarak-bawah {
+   width: 100%;
+   height: 200px;
+
+}
+
+h1.tontonan-title {
+   font-size: 45px;
+}
+
+h1.tontonan-title1 {
+   font-size: 36px;
+}
+
+.tontonan-title2 {
+   font-size: 23px;
+   margin-top: -20px;
+}
+
+.tontonan-content {
+   width: 100%;
+   /* border: 5px solid white; */
+   justify-content: space-around;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.tontonan-content div.anime,
+.tontonan-content div.drakor {
+   width: 400px;
+   height: 100%;
+   margin-bottom: 30px;
+   background-color: var(--nav-background);
+   border-radius: 25px;
+   transition: 0.4s;
+}
+
+.tontonan-content div.anime:hover,
+.tontonan-content div.drakor:hover {
+   transform: scale(1.1);
+}
+
+.tontonan-content h1 {
+   text-align: center;
+   color: var(--hijau-muda);
+   margin: 20px;
+}
+
+.tontonan-content h1:hover {
+   text-decoration: underline;
+}
+
+.tontonan-content img {
+   border-radius: 20px 20px 0px 0px;
+}
+
+/* contact */
+
+.ul-contact {
+   list-style-type: disc;
+   margin-left: 15px;
+   color: var(--nav-background);
+}
+
+.ul-isi {
+   color: white;
+   padding-bottom: 11px;
+}
+
+a.link-contact {
+   text-decoration: var(--hijau-muda) underline;
+   color: white;
+}
+
+.ul-isi-1 {
+   display: flex;
+}
+
+.link-contact {
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.deskripsi-contact {
+   font-size: 17px;
+   color: var(--isi-text);
+}
+
+
+@media screen and (min-width: 768px) {
+
+   h1.home__title.section__title {
+      color: var(--hijau-muda);
+      font-size: 80px
+   }
+
+   h3.home_subtitle.section__title {
+      text-align: center;
+      margin-top: -25px;
+      font-size: 40px;
+   }
+
+   h1.about-title {
+      font-size: 45px;
+   }
+
+   h1.skillset-title {
+      font-size: 36px;
+   }
+
+   h1.skillset {
+      font-size: 30px;
+   }
+
+   .about-description {
+      line-height: 2;
+      font-size: 19px;
+      color: var(--isi-text);
+   }
+
+
+   .ul-isi {
+      display: flex;
+   }
+
 }

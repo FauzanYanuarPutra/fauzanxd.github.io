@@ -186,7 +186,7 @@ img {
 
 .nav__name {
    font-size: var(--tiny-font-size);
-   display: none;
+   /* display: none; */
    /* Mininalist design, hidden labels */
 }
 
@@ -239,8 +239,20 @@ img {
       column-gap: 3rem;
    }
 
+   h1.home__title.section__title {
+      color: var(--hijau-muda);
+      font-size: 2000%
+   }
+
+   /* ABOUT */
+   h1.about-title {
+      font-size: 80px;
+   }
+
 
 }
+
+
 
 @media screen and (min-width: 767px) {
    body {
