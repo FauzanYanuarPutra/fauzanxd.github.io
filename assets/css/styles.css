@@ -109,13 +109,13 @@ div.home__social {
 
 h1.home__title.section__title {
    color: var(--hijau-muda);
-   font-size: 50px
+   font-size: 39px;
 }
 
 h3.home_subtitle.section__title {
    text-align: center;
    margin-top: -25px;
-   font-size: 25px
+   font-size: 20px
 }
 
 /* BUTTONS */
@@ -139,15 +139,19 @@ h3.home_subtitle.section__title {
 
 /* ABOUT */
 h1.about-title {
-   font-size: 45px;
+   font-size: 30px;
 }
 
 h1.skillset-title {
-   font-size: 28px;
+   font-size: 22px;
 }
 
-h1.skillset {
-   font-size: 22px;
+.skillset {
+   font-size: 20px;
+}
+
+.skillsets p {
+   color: var(--isi-text);
 }
 
 .about-title2 {
@@ -228,7 +232,10 @@ h1.tontonan-title1 {
 
 .tontonan-content img {
    border-radius: 20px 20px 0px 0px;
+
 }
+
+
 
 /* contact */
 
@@ -262,8 +269,60 @@ a.link-contact {
    color: var(--isi-text);
 }
 
+/* anime */
+.anime-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+}
 
-@media screen and (min-width: 768px) {
+.isi-anime {
+   background-color: var(--nav-background);
+   margin: 10px;
+   transition: 0.3s;
+}
+
+.isi-anime {
+   border-radius: 10px;
+}
+
+.anjay {
+   background-color: white;
+   width: 100%;
+   height: 100%;
+}
+
+.isi-anime img {
+   border-radius: 10px 10px 0px 0px;
+}
+
+.isi-anime p {
+   color: var(--title-color);
+}
+
+.isi-anime h1 {
+   text-align: center;
+   color: var(--hijau-muda);
+   padding: 30px;
+}
+
+
+.isi-anime h1:hover {
+   text-decoration: rgba(255, 255, 255, 0.363) underline;
+}
+
+
+
+.isi-anime:hover {
+   background-color: rgba(175, 175, 175, 0.432);
+   /* transform: scale(1.1); */
+}
+
+.anime-content img {}
+
+
+@media screen and (min-width: 750px) {
 
    h1.home__title.section__title {
       color: var(--hijau-muda);
@@ -298,5 +357,13 @@ a.link-contact {
    .ul-isi {
       display: flex;
    }
+
+   /* anime */
+   .isi-anime {
+
+      margin: 20px;
+      width: 250px;
+   }
+
 
 }
