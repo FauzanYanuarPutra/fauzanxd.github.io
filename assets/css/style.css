@@ -100,7 +100,13 @@ img {
 
 /* LAYOUT */
 .container {
-   max-width: 968px;
+   max-width: 900px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.container-anime-drakor {
+   max-width: 1200px;
    margin-left: 1rem;
    margin-right: 1rem;
 }
@@ -152,11 +158,16 @@ img {
       /* box-shadow: 0 -1px 12px rgba(208, 208, 208, 0.666); */
       width: 100%;
       height: 4rem;
-      padding: 0 1rem;
+      /* padding: 0 1rem; */
       display: grid;
       align-content: center;
       border-radius: 1.25rem 1.25rem 0 0;
       transition: .4s;
+
+   }
+
+   .nav__list {
+      padding: 1rem;
 
    }
 
@@ -175,7 +186,7 @@ img {
 .nav__link {
    flex-direction: column;
    align-items: center;
-   row-gap: .25rem;
+   /* row-gap: .25rem; */
    color: var(--title-color);
    font-weight: 600;
 }
@@ -188,6 +199,11 @@ img {
    font-size: var(--tiny-font-size);
    /* display: none; */
    /* Mininalist design, hidden labels */
+}
+
+.nav__name-tontonan {
+   font-size: var(--tiny-font-size);
+   display: none;
 }
 
 .nav__icon {
@@ -249,6 +265,12 @@ img {
       font-size: 80px;
    }
 
+   .container {
+      max-width: 900px;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+   }
+
 
 }
 
@@ -282,6 +304,11 @@ img {
       display: block;
    }
 
+   .nav__name-tontonan {
+      font-size: var(--normal-font-size);
+      display: block;
+   }
+
    .nav__link:hover {
       color: var(--first-color);
    }
@@ -307,6 +334,11 @@ img {
 /* For Large devices */
 @media screen and (min-width: 1024px) {
    .container {
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .container-anime-drakor {
       margin-left: auto;
       margin-right: auto;
    }

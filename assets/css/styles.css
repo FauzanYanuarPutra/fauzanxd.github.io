@@ -203,6 +203,7 @@ h1.tontonan-title1 {
    justify-content: space-around;
    display: flex;
    flex-wrap: wrap;
+   /* margin: 5px; */
 }
 
 .tontonan-content div.anime,
@@ -213,6 +214,7 @@ h1.tontonan-title1 {
    background-color: var(--nav-background);
    border-radius: 25px;
    transition: 0.4s;
+
 }
 
 .tontonan-content div.anime:hover,
@@ -319,7 +321,22 @@ a.link-contact {
    /* transform: scale(1.1); */
 }
 
-.anime-content img {}
+/* blog */
+.blog {
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+.blog img {
+   /* justify-content: center; */
+   width: 100%;
+
+}
+
+.blog-link h1 a {
+   color: var(--hijau-muda);
+}
 
 
 @media screen and (min-width: 750px) {
