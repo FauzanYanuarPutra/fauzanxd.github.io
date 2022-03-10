@@ -126,8 +126,8 @@ h3.home_subtitle.section__title {
 
 .button {
    display: inline-block;
-   background-color: var(--hijau-muda);
-   color: black;
+   background-color: var(--nav-background);
+   color: white;
    padding: 10px;
    border-radius: 15px;
    transition: .3s;
