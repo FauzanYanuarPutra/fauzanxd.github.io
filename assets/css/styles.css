@@ -338,6 +338,15 @@ a.link-contact {
    color: var(--hijau-muda);
 }
 
+/* judul */
+h1.judul {
+   font-size: 35px
+}
+
+p.bawah-gambar {
+   color: var(--isi-text);
+   text-align: center;
+}
 
 @media screen and (min-width: 750px) {
 
@@ -362,6 +371,10 @@ a.link-contact {
 
    h1.skillset {
       font-size: 30px;
+   }
+
+   h1.judul {
+      font-size: 45px
    }
 
    .about-description {
