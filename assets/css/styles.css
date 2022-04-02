@@ -390,6 +390,40 @@ a.link-contact {
    transform: scale(1.1);
 }
 
+.project-content {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 95%;
+}
+
+.isi-project {
+   margin-top: 70px;
+   margin-bottom: 70px;
+}
+
+h4.biru {
+   margin-bottom: -28px;
+}
+
+
+
+.isi-project img {
+   width: 100%;
+   margin-top: 30px;
+   transition: 1s
+}
+
+.biru {
+   color: var(--active-color);
+}
+
 
 
 
@@ -478,6 +512,28 @@ p.bawah-gambar {
 
    .isi-sertifikat img:hover {
       transform: scale(1.1);
+   }
+
+   /* PROJECT */
+   .project-content {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 60%;
+   }
+
+
+
+   .isi-project img {
+      width: 100%;
+      margin-top: 30px;
+      transition: 0.4s
    }
 
 }
