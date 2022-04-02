@@ -328,6 +328,30 @@ a.link-contact {
    align-items: center; */
 }
 
+.blog-contents {
+   width: 100%;
+   height: auto;
+   background-color: var(--nav-background);
+
+   padding: 20px;
+   border-radius: 12px;
+   margin-bottom: 20px;
+   margin-top: 5px;
+
+}
+
+
+.blog-contents h1,
+.blog-contents a {
+   color: var(--active-color);
+   font-size: 20px
+}
+
+.blog-isi:hover {
+   text-decoration: underline;
+}
+
+
 .blog img {
    /* justify-content: center; */
    width: 100%;
@@ -337,6 +361,40 @@ a.link-contact {
 .blog-link h1 a {
    color: var(--hijau-muda);
 }
+
+/* SERTIFIKAT */
+.sertifikat-content {}
+
+.sertifikat-content {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   width: 95%;
+}
+
+
+
+.isi-sertifikat img {
+   width: 100%;
+   margin-top: 30px;
+   transition: 0.4s
+}
+
+.isi-sertifikat img:hover {
+   transform: scale(1.1);
+}
+
+
+
+
+/* END SERTIFIKAT */
+
 
 /* judul */
 h1.judul {
@@ -395,5 +453,31 @@ p.bawah-gambar {
       width: 250px;
    }
 
+   /* SERTIFIKAT */
+
+   .sertifikat-content {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 70%;
+   }
+
+
+
+   .isi-sertifikat img {
+      width: 100%;
+      margin-top: 30px;
+      transition: 0.4s
+   }
+
+   .isi-sertifikat img:hover {
+      transform: scale(1.1);
+   }
 
 }
