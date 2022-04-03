@@ -75,6 +75,14 @@
    text-align: center;
 } */
 
+.section__title{
+   margin: 10px;
+}
+
+.section__title2{
+margin: 2px;
+}
+
 
 .nav__item:hover {
    transform: scale(1.2);
@@ -90,21 +98,35 @@
 /* HOME */
 .home__container {
    gap: 1rem;
+   display: grid;
+
 }
 
 
 div.home__social {
-   display: grid;
+   /* display: grid;
    grid-template-columns: max-content;
    row-gap: 1rem;
    margin-top: -110px;
    padding-bottom: 20px;
-   width: 200px
+   width: 200px; */
+    justify-self: center;
+
 }
 
 .home__social-icon {
-   font-size: 25px;
+   font-size: 23px;
    color: var(--first-color);
+   padding: 5px;
+   transition: all .7s;
+}
+
+.home__social-icon:hover {
+   color: #33FFD7;
+}
+
+.home__img{
+   justify-self: center;
 }
 
 h1.home__title.section__title {
@@ -126,9 +148,9 @@ h3.home_subtitle.section__title {
 
 .button {
    display: inline-block;
-   background-color: var(--nav-background);
-   color: white;
-   padding: 10px;
+   background-color: var(--active-color);
+   color: black;
+   padding: 20px;
    border-radius: 15px;
    transition: .3s;
 }
@@ -163,6 +185,14 @@ h1.skillset-title {
    line-height: 2;
    font-size: 17px;
    color: var(--isi-text);
+}
+
+p.about-description{
+   margin-top: -15px;
+}
+
+div.tampilan-awal{
+   /* height:100vh */
 }
 
 /* AKHIR ABOUT */
@@ -328,6 +358,10 @@ a.link-contact {
    align-items: center; */
 }
 
+.blog img{
+ 
+}
+
 .blog-contents {
    width: 100%;
    height: auto;
@@ -378,6 +412,11 @@ a.link-contact {
    width: 95%;
 }
 
+.isi-sertifikat{
+      
+      margin-bottom: 35px;
+   }
+
 
 
 .isi-sertifikat img {
@@ -386,9 +425,9 @@ a.link-contact {
    transition: 0.4s
 }
 
-.isi-sertifikat img:hover {
+/* .isi-sertifikat img:hover {
    transform: scale(1.1);
-}
+} */
 
 .project-content {
    position: relative;
@@ -444,13 +483,13 @@ p.bawah-gambar {
 
    h1.home__title.section__title {
       color: var(--hijau-muda);
-      font-size: 80px
+      font-size: 40px
    }
 
    h3.home_subtitle.section__title {
       text-align: center;
       margin-top: -25px;
-      font-size: 40px;
+      font-size: 20px;
    }
 
    h1.about-title {
@@ -503,16 +542,19 @@ p.bawah-gambar {
    }
 
 
-
+   .isi-sertifikat{
+      margin: 50px;
+   }
+   
    .isi-sertifikat img {
       width: 100%;
       margin-top: 30px;
       transition: 0.4s
    }
 
-   .isi-sertifikat img:hover {
+   /* .isi-sertifikat img:hover {
       transform: scale(1.1);
-   }
+   } */
 
    /* PROJECT */
    .project-content {

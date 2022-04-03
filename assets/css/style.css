@@ -76,9 +76,11 @@ a {
    text-decoration: none;
 }
 
-img {
-   max-width: 100%;
-   height: auto
+.home__img img {
+   max-width: 200px;
+   height: auto;
+   border-radius: 100%;
+   border: 5px solid var(--nav-background);
 }
 
 
